@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunosApp.pages.index"
+             Title="Sistema Alunos"
+             >
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <Image x:Name="photoImage"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"></Image>
+            <Label Text="Bem Vindo"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+
+            <Label x:Name="usernameLabel"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+
+            <Button x:Name="configurarButton"
+                    Text="Configurações"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    ></Button>
+
+            <Button x:Name="verNotasButton"
+                    Text="Ver Notas"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    ></Button>
+
+            <Button x:Name="addNotasButton"
+                    Text="Add Notas"
+                    BackgroundColor="Navy"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    ></Button>
+
+            <Button x:Name="logoutButton"
+                    Text="Logout"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    ></Button>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

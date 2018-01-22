@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunosApp.pages.NotaPage"
+             Title="Notas"
+             >
+    <ScrollView>
+        <StackLayout Spacing="10">
+        <ActivityIndicator x:Name="waitActivityIndicator"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center">
+        </ActivityIndicator>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Participação"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   ></Label>
+            <Entry x:Name="participacaoEntry"
+                   Keyboard="Numeric"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"
+                   Placeholder="Entre com a Nota"></Entry>
+
+            </StackLayout>
+
+            <ListView x:Name="notasListView"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      >
+
+            </ListView>
+
+                <Button x:Name="saveButton"
+                    Text="Salvar Nota"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    ></Button>
+
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

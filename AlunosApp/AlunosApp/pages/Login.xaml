@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunosApp.pages.Login"
+             Title="Login"
+             >
+             
+   
+        
+            <ScrollView>
+                <StackLayout Spacing="20">
+                    <Label Text="Aplicativos Alunos"
+                           Font="30"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold" >
+                    </Label>
+
+                    <Label Text="Digite o seu email e senha para Acesso"
+                           
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           >
+                    </Label>
+
+                    <Entry x:Name="emailEntry"
+                           Placeholder="Entre com seu e-mail"
+                           Keyboard="Email"
+                           VerticalOptions="Center"
+                           HorizontalOptions="FillAndExpand"
+                           >                        
+                    </Entry>
+
+                    <Entry x:Name="passwordEntry"
+                           Placeholder="Entre com sua senha"
+                           IsPassword="True"
+                           VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                           >
+                    </Entry>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Lembrar-me"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center">
+                    </Label>
+                    <Switch x:Name="lembrarmeSwitch"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center">
+                    </Switch>
+                    
+                </StackLayout>
+
+                <ActivityIndicator x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand">
+                </ActivityIndicator>
+                    
+                <Button x:Name="loginButton"
+                        BackgroundColor="Green"
+                        Text="Entrar"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                </Button>
+
+                <Button x:Name="registerButton"
+                        BackgroundColor="Purple"
+                        Text="Cadastrar"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                </Button>
+                    
+            </StackLayout>
+            </ScrollView>
+        
+   
+</ContentPage>

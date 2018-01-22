@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlunosApp.pages.RegisterPage"
+             Title="Cadastrar Usuário"
+             >
+
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <StackLayout Orientation="Horizontal">
+            <Label Text="Email *"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="userNameEntry"
+                       Placeholder="Entre com o email"
+                       Keyboard="Email"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome *"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="nameEntry"
+                       Placeholder="Entre com o nome"
+                      
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Sobrenome *"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="sobrenomeEntry"
+                       Placeholder="Entre com o sobrenome"
+                       
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Telefone"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="telefoneNameEntry"
+                       Placeholder="Entre com o telefone"
+                       
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Endereço"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="enderecoEntry"
+                       Placeholder="Entre com o Endereço"
+                       
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Senha *"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="senhaEntry"
+                       Placeholder="Entre com o a Senha"
+                        IsPassword="True"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Cofirmar Senha *"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   />
+                <Entry x:Name="confirmarsenhaEntry"
+                       Placeholder="Entre com o a confirmação da Senha"
+                       IsPassword="True"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                   />
+            </StackLayout>
+
+
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand">
+            </ActivityIndicator>
+
+            <Button x:Name="saveButton"
+                    Text="Salvar"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    ></Button>
+
+        </StackLayout>
+        </ScrollView>
+
+</ContentPage>
